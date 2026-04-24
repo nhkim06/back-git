@@ -1,0 +1,22 @@
+{
+  "name": "back-git",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "lint-staged": {
+    "*.{js,mjs,cjs,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,html}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^9.x.x",
+    "husky": "^9.x.x",
+    "lint-staged": "^15.x.x"
+  }
+}
